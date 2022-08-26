@@ -2,51 +2,82 @@ Section          Base   Top    High   Length
 ---------------- ------ ------ ------ -------
 .icon            D1A882 D1A9BD           13Bh
 .init.libs       D1A9BD D1AA15            58h
-.libs            D1AA15 D1AA38            23h
-.init.clock      D1AA38 D1AA38             0h
-.init.reruncheck D1AA38 D1AA38             0h
-.init            D1AA38 D1AA62            2Ah
-.fini            D1AA62 D1AA96            34h
-.text            D1AA96 D1ABD0           13Ah
-.data            D1ABD0 D1ABD0             0h
-.rodata          D1ABD0 D1ABF2            22h
+.libs            D1AA15 D1AA44            2Fh
+.init.clock      D1AA44 D1AA44             0h
+.init.reruncheck D1AA44 D1AA44             0h
+.init            D1AA44 D1AA6E            2Ah
+.fini            D1AA6E D1AAA2            34h
+.text            D1AAA2 D1B2DF           83Dh
+.data            D1B2DF D1B2DF             0h
+.rodata          D1B2DF D1B319            3Ah
 .init_array      000000 000000             0h
 .ctors           000000 000000             0h
 .dtors           000000 000000             0h
 .fini_array      000000 000000             0h
-.bss             D052C6 D05326 D13FD8     60h
+.bss             D052C6 D05352 D13FD8     8Ch
 .header          D1A87F D1A882             3h
 
 Label                       Value
 -------------------------   ------
 ___low_bss                = D052C6
-___len_bss                = 000060
+___len_bss                = 00008C
 ___heaptop                = D13FD8
-___heapbot                = D05326
+___heapbot                = D05352
 ___libs                   = D1AA15
 ___init_array_count       = 000000
 ___ctors_count            = 000000
 ___dtors_count            = 000000
 ___fini_array_count       = 000000
 __stack                   = D1A87E
-_os_DisableHomeTextBuffer = D1AA96
-_os_EnableHomeTextBuffer  = D1AAA8
+__fneg                    = D1AAA2
+__frameset                = D1AAAF
+__frameset0               = D1AABD
+__fadd                    = 000270
+__fdiv                    = 000278
+__fmul                    = 000288
+__fsub                    = 000290
+__ftol                    = 00027C
+__ftoul                   = 00027C
+__ltof                    = 000284
+__ultof                   = 000280
+_os_DisableHomeTextBuffer = D1AAC8
+_os_EnableHomeTextBuffer  = D1AADA
 _os_GetCSC                = 021D3C
-.missingappvar            = D1ABD0
-.libloadname              = D1ABD5
+_cos                      = 02211C
+_cosf                     = 02211C
+__ishl                    = 000174
+_sinf                     = 022118
+_sin                      = 022118
+_sqrtf                    = 000298
+_sqrt                     = 000298
+.missingappvar            = D1B2DF
+.libloadname              = D1B2E4
 .libloadnamelen           = 000007
-.webaddress               = D1ABDD
-__start                   = D1AA38
-___exithl                 = D1AA62
-skip._exit                = D1AA62
-skip.__Exit               = D1AA62
-skip._abort               = D1AA62
-_exit.sp                  = D1AA63
-_exit.flash_wait_states   = D1AA6D
-_main                     = D1AABA
+.webaddress               = D1B2EC
+__start                   = D1AA44
+___exithl                 = D1AA6E
+skip._exit                = D1AA6E
+skip.__Exit               = D1AA6E
+skip._abort               = D1AA6E
+_exit.sp                  = D1AA6F
+_exit.flash_wait_states   = D1AA79
+_vecAdd                   = D1AAEC
+_vecSubtract              = D1AB6C
+_vecScalarProduct         = D1ABEC
+_vecNormalise             = D1AC4A
+_linePlaneCollision       = D1AD34
+_MatrMul                  = D1AE43
+_RotateZ                  = D1AF68
+_main                     = D1B02E
+___const.main.camPos      = D1B301
 _vertices                 = D052C6
+___const.main.screen      = D1B30D
+_hit                      = D05346
 lib.LibLoad               = D1AA15
 _#gfx_Begin               = D1AA28
 _#gfx_End                 = D1AA2C
-_#gfx_SetDraw             = D1AA30
-_#gfx_ZeroScreen          = D1AA34
+_#gfx_SetColor            = D1AA30
+_#gfx_SetPixel            = D1AA34
+_#gfx_SetDraw             = D1AA38
+_#gfx_Blit                = D1AA3C
+_#gfx_ZeroScreen          = D1AA40
